@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>收入可視化</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="inputScreen" class="screen">
+        <h1>💰 請輸入您的月薪 💰</h1>
+        <input type="number" id="salaryInput" placeholder="月薪">
+        <button onclick="startAnimation()">開始賺錢 💸</button>
+    </div>
+
+    <div id="animationScreen" class="screen hidden">
+        <div class="income-display">
+            <h2>每秒收入：<span id="incomePerSecond">¥0.00</span> 💰</h2>
+        </div>
+        <div class="treasure-box">
+            <div class="chest">🎁</div>
+            <div id="coinsContainer"></div>
+        </div>
+    </div>
+
+    <!-- 添加音频元素 -->
+    <audio id="coinSound" preload="auto">
+        <source src="coin.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html> 
