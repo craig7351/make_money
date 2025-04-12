@@ -27,7 +27,7 @@ function startAnimation() {
     lastSoundTime = Date.now();
 
     // 计算每秒收入
-    incomePerSecond = monthlySalary / 86400;
+    incomePerSecond = monthlySalary / 2592000;
     
     // 切换屏幕
     document.getElementById('inputScreen').classList.add('hidden');
